@@ -1,0 +1,91 @@
+.main {
+  color: grey;
+
+  .card-wrapper {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+    .date-done {
+      display: flex;
+      justify-content: space-between;
+
+      .done {
+        border: 0;
+        background-color: transparent;
+        font-size: 20px;
+        color: blue;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.4s;
+        box-shadow: none;
+
+        &:hover {
+          background-color: #d2d1f9;
+        }
+      }
+    }
+    .input-title {
+      .title {
+        width: 70%;
+        color: #834040;
+        outline: none;
+        margin: auto;
+        padding: 20px;
+        font-size: 20px;
+        padding: 40px;
+
+        border: 0;
+      }
+
+      @media (max-width: 600px) {
+        display: flex;
+        align-items: center;
+      }
+
+      .edit {
+        border: 0;
+        background-color: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.4s;
+        @media (max-width: 600px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+.add {
+  font-size: 31px;
+  color: white;
+  font-weight: 900;
+  font-family: sans-serif;
+  cursor: pointer;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  border-radius: 11px;
+  margin: 20px;
+  transition: all 0.4s;
+  padding: 10px 35px;
+  &:hover {
+    background-color: #0404af;
+  }
+  .plus {
+    font-size: 60px;
+    font-weight: normal;
+
+    @media (max-width: 500px) {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
+}
