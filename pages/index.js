@@ -24,7 +24,7 @@ export default function Home() {
   function getTodos() {
     setIsLoading(true);
     getTasks((err, result) => {
-      setTasks(result);
+      setTasks(result.reverse());
       setIsLoading(false);
     });
   }
