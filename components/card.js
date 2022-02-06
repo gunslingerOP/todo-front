@@ -49,7 +49,7 @@ const Card = (props) => {
               handleChange(e.target.value);
             }}
             className="title"
-            defaultValue={props.task.title}
+            defaultValue={title}
           />
           <Button disabled={disabled} onClick={changeTask} className="edit">
             CONFIRM
